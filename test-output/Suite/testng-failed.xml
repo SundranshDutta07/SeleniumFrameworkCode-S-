@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Stand Alone Test(failed)">
+    <groups>
+      <run>
+        <include name="Purchase"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="rahulshettyacademy.tests.StandAloneTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SubmitOrder" invocation-numbers="0 1"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- rahulshettyacademy.tests.StandAloneTest -->
+    </classes>
+  </test> <!-- Stand Alone Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
